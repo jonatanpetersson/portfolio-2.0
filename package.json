@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jonatanpetersson/portfolio-2.0/issues"
   },
-  "homepage": "https://github.com/jonatanpetersson/portfolio-2.0#readme"
+  "homepage": "https://github.com/jonatanpetersson/portfolio-2.0#readme",
+  "dependencies": {
+    "jp-weld": "^0.1.1"
+  }
 }
