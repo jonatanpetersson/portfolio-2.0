@@ -4,9 +4,6 @@
   "description": "WIP",
   "main": "script.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonatanpetersson/portfolio-2.0.git"
