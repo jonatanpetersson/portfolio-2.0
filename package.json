@@ -5,8 +5,7 @@
   "main": "script.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "weld": "node node_modules/jp-weld/weld.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/jonatanpetersson/portfolio-2.0/issues"
   },
-  "homepage": "https://github.com/jonatanpetersson/portfolio-2.0#readme",
-  "dependencies": {
-    "jp-weld": "^0.1.2"
-  }
+  "homepage": "https://github.com/jonatanpetersson/portfolio-2.0#readme"
 }
