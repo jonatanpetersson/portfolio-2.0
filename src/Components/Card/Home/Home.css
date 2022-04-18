@@ -1,0 +1,61 @@
+.home-tab {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.home-tab .profile {
+  min-width: 20rem;
+  min-height: 20rem;
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  background-image: url('./assets/img/profile.jpg');
+  background-size: cover;
+}
+
+.home-tab .text {
+  position: relative;
+}
+
+.handwave {
+  position: absolute;
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: bottom right;
+  color: #6200ee;
+  font-size: 2rem;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(35deg);
+  }
+  26% {
+    transform: rotate(35deg);
+  }
+  40% {
+    transform: rotate(50deg);
+  }
+  47% {
+    transform: rotate(40deg);
+  }
+  53% {
+    transform: rotate(50deg);
+  }
+  60% {
+    transform: rotate(40deg);
+  }
+  74% {
+    transform: rotate(55deg);
+  }
+  100% {
+    transform: rotate(55deg);
+  }
+}
