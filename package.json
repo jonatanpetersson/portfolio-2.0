@@ -2,10 +2,11 @@
   "name": "portfolio-2.0",
   "version": "1.0.0",
   "description": "WIP",
-  "main": "script.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon -e js,css,html --ignore dist/ --exec npx weld build"
+    "dev": "nodemon -e js,css,html --ignore dist/ --exec npx weld build",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/jonatanpetersson/portfolio-2.0#readme",
   "devDependencies": {
+    "express": "^4.17.3",
     "jp-weld": "^0.2.0",
     "nodemon": "^2.0.15"
   }

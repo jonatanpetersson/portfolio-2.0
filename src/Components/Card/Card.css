@@ -1,7 +1,6 @@
 .card {
   min-width: 50rem;
   max-width: 50rem;
-  /* height: fit-content; */
   min-height: 30rem;
   max-height: 30rem;
   background-color: white;
@@ -9,9 +8,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 1rem; */
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    min-width: unset;
+    max-width: unset;
+    max-width: unset;
+    max-height: unset;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
 
 .card-content {

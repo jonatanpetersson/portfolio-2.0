@@ -13,3 +13,12 @@
   height: 5rem;
   width: 5rem;
 }
+
+@media (max-width: 500px) {
+  .weld {
+    flex-direction: column-reverse;
+    right: 1rem;
+    bottom: unset;
+    top: 1rem;
+  }
+}

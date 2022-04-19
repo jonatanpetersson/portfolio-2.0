@@ -5,6 +5,12 @@
   padding: 2rem;
 }
 
+@media (max-width: 500px) {
+  .home-tab {
+    flex-direction: column;
+  }
+}
+
 .home-tab .profile {
   min-width: 20rem;
   min-height: 20rem;
