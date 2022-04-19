@@ -1,9 +1,9 @@
-const homeLink = document.querySelector('.home-link');
-const homeTab = document.querySelector('.home-tab');
+const homeLink = document.querySelector('.me-link');
+const homeTab = document.querySelector('.me-tab');
 const workLink = document.querySelector('.work-link');
 const workTab = document.querySelector('.work-tab');
-const aboutLink = document.querySelector('.about-link');
-const aboutTab = document.querySelector('.about-tab');
+// const aboutLink = document.querySelector('.about-link');
+// const aboutTab = document.querySelector('.about-tab');
 const contactLink = document.querySelector('.contact-link');
 const contactTab = document.querySelector('.contact-tab');
 const router = {
@@ -15,10 +15,10 @@ const router = {
     link: workLink,
     tab: workTab,
   },
-  about: {
-    link: aboutLink,
-    tab: aboutTab,
-  },
+  // about: {
+  //   link: aboutLink,
+  //   tab: aboutTab,
+  // },
   contact: {
     link: contactLink,
     tab: contactTab

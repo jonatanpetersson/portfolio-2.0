@@ -1,4 +1,4 @@
-.home-tab {
+.me-tab {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -6,12 +6,12 @@
 }
 
 @media (max-width: 500px) {
-  .home-tab {
+  .me-tab {
     flex-direction: column;
   }
 }
 
-.home-tab .profile {
+.me-tab .profile {
   min-width: 20rem;
   min-height: 20rem;
   height: 100%;
@@ -21,7 +21,7 @@
   background-size: cover;
 }
 
-.home-tab .text {
+.me-tab .text {
   position: relative;
 }
 
