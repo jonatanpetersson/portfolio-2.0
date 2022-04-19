@@ -18,11 +18,6 @@
   border-bottom: 3px solid transparent;
 }
 
-.navigation a:hover {
-  color: #727074;
-  background-color: #eae7ee;
-  border-bottom-color: #eae7ee;
-}
 .navigation a:focus-visible {
   color: #727074;
   background-color: white;
@@ -51,9 +46,17 @@
   font-size: 2rem;
   color: #727074;
 }
-.navigation a span:hover {
-  font-size: 2rem;
-  color: #727074;
+
+@media (hover: hover) {
+  .navigation a:hover {
+    color: #727074;
+    background-color: #eae7ee;
+    border-bottom-color: #eae7ee;
+  }
+  .navigation a span:hover {
+    font-size: 2rem;
+    color: #727074;
+  }
 }
 
 .active-link {
