@@ -8,6 +8,8 @@
 @media (max-width: 500px) {
   .me-tab {
     flex-direction: column;
+    padding: 4rem;
+    gap: 4rem;
   }
 }
 
@@ -25,7 +27,13 @@
   position: relative;
 }
 
-.handwave {
+.me-tab a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.me-tab .handwave {
   position: absolute;
   animation-name: wave;
   animation-duration: 2s;
