@@ -5,7 +5,7 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/portfolio-2.0',
     live: 'https://jonatanpetersson.com',
     techs: ['html', 'css', 'js', 'weld'],
-    text: `Personal portfolio. Very basic obviously, but I like that. However, my project 'Weld' grew out of an idea of how to make this page, which in turn made me actualy use it to build it.`
+    text: `Personal portfolio, the one you're looking at right now. Very basic obviously, but I like that. However, my project 'Weld' grew out of an idea of how to make this page, which in turn made me actualy use it to build it.`
   },
   {
     route: 'weld',
@@ -13,7 +13,7 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/jp-weld',
     live: 'https://www.npmjs.com/package/jp-weld',
     techs: ['html', 'css', 'ts', 'js'],
-    text: `Basically this started with me wanting to make my portfolio vanilla but with a component architecture, and didn't want to rely on any bloated framework for it... So I made my own. So Weld is a component framework + compiling tool for deployment. Try it out!`
+    text: `Basically this started with me wanting to make my portfolio vanilla but with a component architecture, and didn't want to rely on any bloated framework for it, so I made my own. Weld is a component framework + compiling tool for deployment. Try it out!`
   },
   {
     route: 'metanet',
