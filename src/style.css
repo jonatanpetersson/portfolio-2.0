@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 10px;
+  color: #212121;
 }
 
 .root {
@@ -17,4 +18,3 @@ body {
   height: 100%;
   font-size: 1.6rem;
 }
-

@@ -1,5 +1,5 @@
 .me-tab {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   height: 26.4rem;
   max-height: 26.4rem;
   width: 100%;
@@ -22,8 +22,7 @@
 }
 
 .me-tab .profile {
-  height: 100%;
-  max-height: 25rem;
+  max-height: 20rem;
 }
 
 .me-tab a {
