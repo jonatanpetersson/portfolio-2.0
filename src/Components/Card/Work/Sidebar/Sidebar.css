@@ -45,12 +45,13 @@
 
 @media (max-width: 500px) {
   .work-tab .sidebar {
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    bottom: 5.2rem;
-    justify-content: flex-end;
+    bottom: 5.2rem; */
+    justify-content: center;
   }
   .work-tab .sidebar a {
-    padding: 1rem 0;
+    padding: 2rem 1rem;
+    height: 0%;
   }
 }
