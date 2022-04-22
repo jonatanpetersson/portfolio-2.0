@@ -10,13 +10,19 @@
 .work-content .title {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .work-content .title span {
   flex: 1 1 auto;
 }
 
-.work-content .title a {
+.work-content .title .links {
+  display: flex;
+  gap: 1rem;
+}
+
+.work-content .title .links a {
   color: #212121;
   flex: 0 1 auto;
 }
@@ -24,6 +30,7 @@
 .work-content .techstack {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .work-content .tech {
@@ -52,6 +59,7 @@
   .work-content {
     justify-content: center;
     gap: 1rem;
+    padding: 2rem 1rem 2rem 2rem;
   }
   .work-content .text {
     flex: 0 1 auto;

@@ -39,7 +39,7 @@
 }
 
 .work-tab .work-active-link {
-  color: #6200ee;
+  color: #6200ee !important;
   border-right: 0.3rem solid #6200ee !important;
 }
 
