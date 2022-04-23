@@ -5,3 +5,17 @@
   justify-content: center;
   align-items: center;
 }
+
+.contact-tab .links-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-tab .links-wrapper a {
+  color: #212121;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
