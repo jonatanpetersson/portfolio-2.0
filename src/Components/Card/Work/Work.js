@@ -4,31 +4,31 @@ const projects = [
     title: 'Portfolio v2',
     github: 'https://github.com/jonatanpetersson/portfolio-2.0',
     live: 'https://jonatanpetersson.com',
-    techs: ['html', 'css', 'js', 'weld'],
-    text: `Personal portfolio, the one you're looking at right now. Very basic obviously, but I like that. However, my project 'Weld' grew out of an idea of how to make this page, which in turn made me actualy use it to build it.`
+    techs: ['html', 'css', 'js', 'node', 'weld'],
+    text: `Personal portfolio, the one you're looking at right now. Very basic obviously, but I like that. However, my project 'Weld' grew out of an idea of how to make this portfolio, which in turn made me actualy use it to build this.`
   },
   {
     route: 'weld',
     title: 'Weld',
     github: 'https://github.com/jonatanpetersson/jp-weld',
     live: 'https://www.npmjs.com/package/jp-weld',
-    techs: ['html', 'css', 'ts', 'js'],
-    text: `Basically this started with me wanting to make my portfolio vanilla but with a component architecture, and didn't want to rely on any bloated framework for it, so I made my own. Weld is a component framework + compiling tool for deployment. Try it out!`
+    techs: ['ts', 'js', 'node'],
+    text: `Weld is a component framework and compiling tool for CD of js web apps. Basically this started with me wanting to make my portfolio vanilla but with a component architecture, and didn't want to rely on any bloated framework, so I made my own. Try it out and let me know what you think!`
   },
   {
     route: 'metanet',
     title: 'Metanet',
     github: 'https://github.com/jonatanpetersson/metanet',
     live: 'https://metanet-rjms.herokuapp.com',
-    techs: ['html', 'css', 'js', 'react', 'graphql', 'express', 'nosql'],
-    text: `A marketplace for metaverse properties. It was created as the final project of the </salt> bootcamp of fall -21. This MVP currently supports parcels from the cryptovoxels metaverse.`
+    techs: ['html', 'sass', 'js', 'node', 'react', 'express', 'graphql', 'mongodb', 'jwt'],
+    text: `A marketplace for metaverse properties. It was our final project of the </salt> bootcamp of fall -21. Current version supports parcels from the cryptovoxels metaverse.`
   },
   {
     route: 'wolfie',
     title: 'Wolfie',
     github: 'https://github.com/jonatanpetersson/wolfie',
     live: 'https://jp-wolfie.herokuapp.com/',
-    techs: ['html', 'css', 'js', 'react', 'express'],
+    techs: ['html', 'sass', 'js', 'node', 'react', 'express'],
     text: `Project made in one day during the </salt> bootcamp of fall -21. It's using wolfram alphas search engine combined with the wikipedia api, providing a sort of blend between a search engine and a chat bot. NOTE: Limited amount of requests so don't go crazy, please.`
   },
 ];

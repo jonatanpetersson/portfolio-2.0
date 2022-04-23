@@ -1,5 +1,24 @@
 .work-tab {
   width: 100%;
+  height: 100%;
+}
+
+.work-tab-content-wrapper {
+  width: 100%;
   flex: 1 0 auto;
   display: flex;
+  height: 100%;
+}
+
+@media (max-width: 500px) {
+  .work-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50%;
+  }
+  .work-tab-content-wrapper {
+    flex: 0 1 auto;
+    height: fit-content;
+  }
 }

@@ -4,10 +4,15 @@
   max-height: 26.4rem;
   width: 100%;
   padding: 2rem;
-
   display: flex;
-  gap: 2rem;
   align-items: center;
+  gap: 2rem;
+}
+
+.me-tab .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media (max-width: 500px) {
@@ -16,14 +21,23 @@
     max-height: unset;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem;
+    padding: 3rem;
     gap: 4rem;
   }
 }
 
 .me-tab .profile {
+  height: 100%;
+  width: 100%;
   max-height: 20rem;
+  max-width: 20rem;
 }
+
+/* .me.tab .text {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+} */
 
 .me-tab a {
   color: black;

@@ -48,6 +48,24 @@
 .work-content .js {
   background-color: hsla(48, 88%, 58%, 0.25);
 }
+.work-content .ts {
+  background-color: hsla(204, 100%, 40%, 0.25);
+}
+.work-content .node {
+  background-color: hsla(110, 39%, 45%, 0.25);
+}
+.work-content .react {
+  background-color: hsla(193, 81%, 65%, 0.25);
+}
+.work-content .graphql {
+  background-color: hsla(320, 69%, 52%, 0.25);
+}
+.work-content .mongodb {
+  background-color: hsla(112, 47%, 45%, 0.25);
+}
+.work-content .sass {
+  background-color: hsla(331, 45%, 57%, 0.25);
+}
 
 .work-content .text {
   flex: 1 1 auto;
