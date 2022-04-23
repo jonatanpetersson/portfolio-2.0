@@ -25,6 +25,7 @@
 .work-content .title .links a {
   color: #212121;
   flex: 0 1 auto;
+  background-color: #fff;
 }
 
 .work-content .techstack {

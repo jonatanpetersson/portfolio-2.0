@@ -18,3 +18,9 @@ body {
   height: 100%;
   font-size: 1.6rem;
 }
+
+@media (hover: hover) {
+  a:hover {
+    background-color: #eae7ee;
+  }
+}
