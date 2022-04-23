@@ -14,8 +14,7 @@
   .work-tab {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 50%;
+    padding-top: 75%;
   }
   .work-tab-content-wrapper {
     flex: 0 1 auto;
