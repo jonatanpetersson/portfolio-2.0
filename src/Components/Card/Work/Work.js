@@ -5,7 +5,7 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/portfolio-2.0',
     live: 'https://jonatanpetersson.com',
     techs: ['html', 'css', 'js', 'node', 'weld'],
-    text: `Personal portfolio, the one you're looking at right now. Very basic obviously, but I like that. However, my project 'Weld' grew out of an idea of how to make this portfolio, which in turn made me actualy use it to build this.`
+    text: `Personal portfolio, the one you're looking at right now. Very basic obviously, but I like that. However, my project 'Weld' grew out of an idea of how to make this portfolio, which in turn made me actually use it to build this.`
   },
   {
     route: 'weld',
