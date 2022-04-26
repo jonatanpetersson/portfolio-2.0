@@ -77,5 +77,5 @@ projects.forEach(project => {
   workSidebar.append(link);
 })
 
-previousActiveLink = select('nav.sidebar > a');
+previousActiveLink = select('aside.sidebar > a');
 previousActiveLink.click();
