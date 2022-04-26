@@ -1,11 +1,11 @@
 const projects = [
   {
-    route: 'portfolio-v2',
-    title: 'Portfolio v2',
+    route: 'portfolio',
+    title: 'Portfolio',
     github: 'https://github.com/jonatanpetersson/portfolio-2.0',
     live: 'https://jonatanpetersson.com',
     techs: ['html', 'css', 'js', 'node', 'weld'],
-    text: `Personal portfolio, the one you're looking at right now. Very basic obviously, but I like that. However, my project 'Weld' grew out of an idea of how to make this portfolio, which in turn made me actually use it to build this.`
+    text: `Personal portfolio, the one you're at right now. Vanilla and minimalist the way I like it, however it's mostly an experiment project using my own component framework Weld to build it.`
   },
   {
     route: 'weld',
@@ -13,15 +13,15 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/jp-weld',
     live: 'https://www.npmjs.com/package/jp-weld',
     techs: ['ts', 'js', 'node'],
-    text: `Weld is a component framework and compiling tool for CD of js web apps. Basically this started with me wanting to make my portfolio vanilla but with a component architecture, and didn't want to rely on any bloated framework, so I made my own. Try it out and let me know what you think!`
+    text: `Weld is a component framework and compiling tool for CD of js web apps. Having worked with React and Angular for a while, I wanted to give a shot at making my own frontend framework. Try it out and let me know what you think!`
   },
   {
     route: 'metanet',
     title: 'Metanet',
     github: 'https://github.com/jonatanpetersson/metanet',
     live: 'https://metanet-rjms.herokuapp.com',
-    techs: ['html', 'sass', 'js', 'node', 'react', 'express', 'graphql', 'mongodb', 'jwt'],
-    text: `A marketplace for metaverse properties. It was our final project of the </salt> bootcamp of fall -21. Current version supports parcels from the cryptovoxels metaverse.`
+    techs: ['html', 'sass', 'js', 'node', 'react', 'express', 'jwt', 'graphql', 'mongodb'],
+    text: `MVP of a marketplace for metaverse properties, the final project of the </salt> bootcamp of fall -21. I mainly worked on data modelling and setting up the backend (MongoDB database, GraphQL API, JWT auth server) and building a messaging feature for users in the frontend.`
   },
   {
     route: 'wolfie',
@@ -29,22 +29,26 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/wolfie',
     live: 'https://jp-wolfie.herokuapp.com/',
     techs: ['html', 'sass', 'js', 'node', 'react', 'express'],
-    text: `Project made in one day during the </salt> bootcamp of fall -21. It's using wolfram alphas search engine combined with the wikipedia api, providing a sort of blend between a search engine and a chat bot. NOTE: Limited amount of requests so don't go crazy, please.`
+    text: `Wolfie is a combination of a chat bot and a search engine, providing short but expandable to most questions aggregating data using the Wolfram Alpha's NLU System and Wikipedias API. Project made in a single day during the </salt> bootcamp of fall -21.`
   },
 ];
 
-let projectsMap = {}; 
+const select = el => document.querySelector(el);
+const create = el => document.createElement(el);
+
+const projectsMap = {}; 
 projects.forEach(project => projectsMap[project.route] = project);
 
-const workSidebar = document.querySelector('.sidebar');
-let workTitle = document.querySelector('.work-content .title-text');
-let workGithubLink = document.querySelector('.work-content .github');
-let workLiveLink = document.querySelector('.work-content .live');
-let workTechStack = document.querySelector('.work-content .techstack');
-let workText = document.querySelector('.work-content .text');
+const workSidebar = select('.sidebar');
+const workTitle = select('.work-content .title-text');
+const workGithubLink = select('.work-content .github');
+const workLiveLink = select('.work-content .live');
+const workTechStack = select('.work-content .techstack');
+const workText = select('.work-content .text');
+let previousActiveLink;
 
 projects.forEach(project => {
-  const link = document.createElement('a');
+  const link = create('a');
   link.setAttribute('data-route', project.route);
   link.setAttribute('href', `/${project.route}`);
   link.textContent = project.title;
@@ -62,8 +66,9 @@ projects.forEach(project => {
     workLiveLink.setAttribute('href', projectsMap[route].live);
     workText.textContent = projectsMap[route].text;
     workTechStack.innerHTML = '';
+
     projectsMap[route].techs.forEach(tech => {
-      let techEl = document.createElement('span');
+      let techEl = create('span');
       techEl.textContent = tech;
       techEl.classList.add('tech', tech);
       workTechStack.append(techEl);
@@ -72,5 +77,5 @@ projects.forEach(project => {
   workSidebar.append(link);
 })
 
-let previousActiveLink = document.querySelector('div.sidebar > a');
+previousActiveLink = select('nav.sidebar > a');
 previousActiveLink.click();

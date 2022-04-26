@@ -4,20 +4,20 @@
 }
 
 .work-tab-content-wrapper {
+  height: 100%;
   width: 100%;
   flex: 1 0 auto;
   display: flex;
-  height: 100%;
 }
 
 @media (max-width: 500px) {
   .work-tab {
     display: flex;
-    flex-direction: column;
-    padding-top: 75%;
+    align-items: center;
   }
   .work-tab-content-wrapper {
     flex: 0 1 auto;
-    height: fit-content;
+    height: 26rem;
+    overflow: visible;
   }
 }
