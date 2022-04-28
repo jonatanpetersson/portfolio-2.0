@@ -4,6 +4,7 @@ const workLink = document.querySelector('.work-link');
 const workTab = document.querySelector('.work-tab');
 const contactLink = document.querySelector('.contact-link');
 const contactTab = document.querySelector('.contact-tab');
+
 const router = {
   home: {
     link: homeLink,
@@ -19,9 +20,13 @@ const router = {
   }
 }
 
+let activeTab;
+
 Object.keys(router).forEach(route => {
   router[route].link.addEventListener('click', (ev) => {
     ev.preventDefault();
+    // path = ev.currentTarget.attributes.href.value;
+    // history.pushState('', '', path);
     const route = ev.currentTarget.dataset.route;
     router[activeTab].tab.classList.add('hide-tab');
     router[activeTab].link.classList.remove('active-link');
@@ -31,6 +36,11 @@ Object.keys(router).forEach(route => {
   })
 })
 
-let activeTab = 'home';
+activeTab = 'home';
 router.home.link.classList.add('active-link');
 router.home.tab.classList.remove('hide-tab');
+
+// addEventListener('popstate', (ev) => {
+//   console.log(ev.target.location.pathname);
+//   const targetPath = ev.target.location.pathname;
+// })

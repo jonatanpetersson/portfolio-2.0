@@ -21,7 +21,7 @@
   "homepage": "https://github.com/jonatanpetersson/portfolio-2.0#readme",
   "devDependencies": {
     "express": "^4.17.3",
-    "jp-weld": "^0.2.0",
+    "jp-weld": "^0.2.1",
     "nodemon": "^2.0.15"
   }
 }
