@@ -5,7 +5,7 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/portfolio-2.0',
     live: 'https://jonatanpetersson.com',
     techs: ['html', 'css', 'js', 'node', 'weld'],
-    text: `Personal portfolio, the one you're at right now. Vanilla and minimalist the way I like it, however it's mostly an experiment project using my own component framework Weld to build it.`
+    text: `Personal portfolio, the one you're at right now. Vanilla and minimalist the way I like it, however it's mostly an experiment project using my own component framework Weld to build it.`,
   },
   {
     route: 'weld',
@@ -13,15 +13,25 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/jp-weld',
     live: 'https://www.npmjs.com/package/jp-weld',
     techs: ['ts', 'js', 'node'],
-    text: `Weld is a component framework and compiling tool for CD of js web apps. Having worked with React and Angular for a while, I wanted to give a shot at making my own frontend framework. Try it out and let me know what you think!`
+    text: `Weld is a component framework and compiling tool for CD of js web apps. Having worked with React and Angular for a while, I wanted to give a shot at making my own frontend framework. Try it out and let me know what you think!`,
   },
   {
     route: 'metanet',
     title: 'Metanet',
     github: 'https://github.com/jonatanpetersson/metanet',
     live: 'https://metanet-rjms.herokuapp.com',
-    techs: ['html', 'sass', 'js', 'node', 'react', 'express', 'jwt', 'graphql', 'mongodb'],
-    text: `MVP of a marketplace for metaverse properties, the final project of the </salt> bootcamp of fall -21. I mainly worked on data modelling and setting up the backend (MongoDB database, GraphQL API, JWT auth server) and building a messaging feature for users in the frontend.`
+    techs: [
+      'html',
+      'sass',
+      'js',
+      'node',
+      'react',
+      'express',
+      'jwt',
+      'graphql',
+      'mongodb',
+    ],
+    text: `MVP of a marketplace for metaverse properties, the final project of the </salt> bootcamp of fall -21. I mainly worked on data modelling and setting up the backend (MongoDB database, GraphQL API, JWT auth server) and building a messaging feature for users in the frontend.`,
   },
   {
     route: 'wolfie',
@@ -29,15 +39,23 @@ const projects = [
     github: 'https://github.com/jonatanpetersson/wolfie',
     live: 'https://jp-wolfie.herokuapp.com/',
     techs: ['html', 'sass', 'js', 'node', 'react', 'express'],
-    text: `Wolfie is a combination of a chat bot and a search engine, providing short but expandable to most questions aggregating data using the Wolfram Alpha's NLU System and Wikipedias API. Project made in a single day during the </salt> bootcamp of fall -21.`
+    text: `Wolfie is a combination of a chat bot and a search engine, providing short but expandable to most questions aggregating data using the Wolfram Alpha's NLU System and Wikipedias API. Project made in a single day during the </salt> bootcamp of fall -21.`,
+  },
+  {
+    route: 'game-of-life',
+    title: 'Game of Life',
+    github: 'https://github.com/jonatanpetersson/game-of-life',
+    live: 'https://jp-game-of-life.netlify.app/',
+    techs: ['html', 'css', 'ts', 'node', 'webpack'],
+    text: `A recreation and visualisation of Conway's Game of Life. You "play" it by creating an initial configuration and simply observe how it evolves. You can also add predefined configurations at any time which will affect the outcome.`,
   },
 ];
 
-const select = el => document.querySelector(el);
-const create = el => document.createElement(el);
+const select = (el) => document.querySelector(el);
+const create = (el) => document.createElement(el);
 
-const projectsMap = {}; 
-projects.forEach(project => projectsMap[project.route] = project);
+const projectsMap = {};
+projects.forEach((project) => (projectsMap[project.route] = project));
 
 const workSidebar = select('.sidebar');
 const workTitle = select('.work-content .title-text');
@@ -47,18 +65,18 @@ const workTechStack = select('.work-content .techstack');
 const workText = select('.work-content .text');
 let previousActiveLink;
 
-projects.forEach(project => {
+projects.forEach((project) => {
   const link = create('a');
   link.setAttribute('data-route', project.route);
   link.setAttribute('href', `/${project.route}`);
   link.textContent = project.title;
   link.addEventListener('click', (ev) => {
     ev.preventDefault();
-    
+
     previousActiveLink.classList.remove('work-active-link');
     previousActiveLink = ev.currentTarget;
     ev.currentTarget.classList.add('work-active-link');
-    
+
     const route = ev.currentTarget.dataset.route;
 
     workTitle.textContent = projectsMap[route].title;
@@ -67,7 +85,7 @@ projects.forEach(project => {
     workText.textContent = projectsMap[route].text;
     workTechStack.innerHTML = '';
 
-    projectsMap[route].techs.forEach(tech => {
+    projectsMap[route].techs.forEach((tech) => {
       let techEl = create('span');
       techEl.textContent = tech;
       techEl.classList.add('tech', tech);
@@ -75,7 +93,7 @@ projects.forEach(project => {
     });
   });
   workSidebar.append(link);
-})
+});
 
 previousActiveLink = select('aside.sidebar > a');
 previousActiveLink.click();

@@ -29,6 +29,9 @@
   display: flex;
   align-items: center;
 }
+.work-content .title .links a svg:hover {
+  background-color: #eae7ee;
+}
 
 .work-content .techstack {
   display: flex;
