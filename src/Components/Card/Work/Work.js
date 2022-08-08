@@ -49,6 +49,14 @@ const projects = [
     techs: ['html', 'css', 'ts', 'node', 'webpack'],
     text: `A recreation and visualisation of Conway's Game of Life. You "play" it by creating an initial configuration and simply observe how it evolves. You can also add predefined configurations at any time which will affect the outcome.`,
   },
+  {
+    route: 'algo-sandbox',
+    title: 'Algo Sandbox',
+    github: 'https://github.com/jonatanpetersson/game-of-life',
+    live: 'https://jp-algo-sandbox.netlify.app/',
+    techs: ['html', 'css', 'js', 'node', 'weld'],
+    text: `A playground I currently use for different projects of data and algorithm visualisations which I've had a lot of fun with recently. You're welcome to check it out but bear in mind that this is mainly for my personal use and may not be very user friendly at this stage.`,
+  },
 ];
 
 const select = (el) => document.querySelector(el);
